@@ -12,7 +12,44 @@
 }
 
 
+wrapper {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+}
 
+path {
+  stroke: #fff;
+  fill: #fff;
+  stroke-dasharray: 2157;
+  opacity: 10;
+  animation: animate 3s cubic-bezier(0, 0.23, 1, .1);
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 2157;
+  }
+
+  30% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 2157;
+  }
+
+  90% {
+    fill: rgba(255, 255, 255, 0);
+  }
+
+  100% {
+    opacity: 10;
+    fill: rgba(255, 255, 255, 1);
+  }
+}
 
 
 
@@ -10691,8 +10728,8 @@ hr.small {
 
 .masthead {
   position: relative;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.7))), url("/css/b&w-gear.jpeg");
-  background: linear-gradient(rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0.301)), url("/css/b&w-gear.jpeg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.7))), url("/css/cars-in-traffic.mp4");
+  background: linear-gradient(rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0.301)), url("/css/cars-in-traffic.mp4");
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
